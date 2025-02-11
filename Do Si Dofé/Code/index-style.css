@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 129px;
+    position: fixed; /* pour que le header reste en haut de la page lorsqu'on scroll */
+    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.457);
+}
+
+
+.barre-de-navigation{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barre-de-navigation li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.Logo-nav{
+    width: 110px;
+    height: 90px;
+}
+
+/* MAIN */
+main{
+}
+
+
+/* SECTION 1 : page d'acceuil -photo background */
+
+#Page-acceuil{
+    width: 100%;
+    height:fit-content ;
+}
+
+.fond-hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.conteneur-texte-hero{
+    position: absolute; /*pour mettre ce conteneur au dessus le l'image, qui elle a été placée en absolute*/
+    max-width: 500px;
+    height: ;
+    padding: 20px;
+    color:white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* SECTION 2 : rubrique Le restaurant  */
+
+#Le-Restaurant{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+}
+
