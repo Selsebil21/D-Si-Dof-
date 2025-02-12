@@ -1,2 +1,2 @@
 # D-Si-Dof-
-Site de restaurant gastrnomique à La Réunion
+Dé Si Dofé : Site de restaurant gastrnomique à La Réunion
