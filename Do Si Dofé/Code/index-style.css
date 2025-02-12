@@ -25,7 +25,7 @@ header{
     height: 129px;
     position: fixed; /* pour que le header reste en haut de la page lorsqu'on scroll */
     z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Dégradé : Noir opaque -> Noir transaprent */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)); /* Dégradé : Noir opaque -> Noir transaprent */
 }
 
 .barre-de-navigation{
@@ -81,6 +81,7 @@ header{
     padding: 10px 45px;
     font-size: 1.2rem;
     color:#1f2912 ;
+    background-color: transparent;
     border: 2px solid #465D2A;
     border-radius: 10px;
     text-align: center;
@@ -128,7 +129,7 @@ header{
     font-size: 3rem;
 }
 
-.conteneur-texte-hero button{
+.button-orange{
     padding: 10px 45px;
     font-size: 1.2rem;
     color: white;
@@ -140,10 +141,10 @@ header{
     cursor: pointer;
 }
 
-.conteneur-texte-hero button:hover{
-    background-color: orange;
+.button-orange:hover{
+    background-color: #D37533;
     color: black;
-    border:2px solid orange;
+    border:2px solid #D37533;
 }
 
 
@@ -152,7 +153,7 @@ header{
 #Le-Restaurant{
     width: 85%;
     height: auto;
-    margin: 2% auto;
+    margin: 4% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -181,7 +182,218 @@ header{
 }
 
 .boite-drte img{
-    width: 324px;
+    width: 400px;
     height: 500px;
     border-radius: 3px;
+}
+
+
+/* SECTION 3 : rubrique LA CHEFFE  */
+
+#La-Cheffe{
+    width: 100%;
+    height: auto;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#La-Cheffe img{
+    width: 700px;
+    height: auto;
+    border-radius:0 3px 3px 0;
+}
+
+
+/* SECTION 4 : rubrique Spécialités  */
+
+#Spécialités{
+    width: 90%;
+    height: auto;
+    margin: 4% auto;
+}
+
+.boite-spe{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.boite-spe p{
+    text-align: center;
+}
+
+#grid-3{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+}
+#grid-3 img{
+    width: 400px;
+    height: 610px;
+    border-radius: 3px;
+}
+#grid-3 p{
+    text-align: left;
+}
+
+
+/* SECTION 5 : rubrique des citations  */
+
+#Citations{
+    position: relative;
+   max-width: 60%;
+    height: auto;
+    margin: 7% auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+}
+
+#Citations p{
+    text-align: center;
+}
+
+#Citations img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.boite-cit{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.boite-cit b{
+    font-family: "Italiana", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* SECTION 6 : LAST SECTION  */
+
+#Derniere-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map{
+    width: 50%;
+    height:auto ;
+}
+
+.boite-last-drte{
+    width: 50%;
+    /* min-height: 508px; */
+    height:750px ;
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+ .boite-last-drte p{
+    max-width: 40%;
+    text-align: center;
+ }
+
+
+
+ /* LE FOOTER  */
+
+ footer{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.932);
+}
+
+#fond-flamme{
+    width: 100%;
+    position: absolute;
+}
+
+#Footer{
+    position: relative;
+    width: 93%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.footer-haut{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: left;
+    justify-content: space-between;
+    gap: 5%;
+    padding-top: 5%;
+    margin-bottom: 2%;
+}
+
+#Footer{
+    color: white;
+}
+ .mini-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+ }
+ .mini-column input{
+    padding: 10px 20px;
+    border: 2px solid  #D37533;
+    border-radius: 5px;
+ }
+
+ .footer-bas{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20%;
+ }
+ .footer-bas2{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20%;
+ }
+ .footer-icon{
+    width: 7%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ 
+ .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#Footer hr{
+    color: white;
 }
