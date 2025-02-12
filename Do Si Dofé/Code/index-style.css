@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+/* Je détermine les polices*/
+body{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+/*Général*/
 *{
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 /* HEADER */
 header{
@@ -11,13 +25,8 @@ header{
     height: 129px;
     position: fixed; /* pour que le header reste en haut de la page lorsqu'on scroll */
     z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Dégradé : Noir opaque -> Noir transaprent */
 }
-
-header.scrolled {
-    background-color: rgba(0, 0, 0, 0.45);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.457);
-}
-
 
 .barre-de-navigation{
     width: 100%;
@@ -29,10 +38,16 @@ header.scrolled {
 }
 
 .barre-de-navigation li{
-    text-decoration: none;
     list-style: none;
+}
+
+.barre-de-navigation li a{
+    text-decoration: none;
     color: white;
-    font-size: 1rem;
+}
+
+.barre-de-navigation li a:hover{
+    text-shadow:gainsboro;
 }
 
 .Logo-nav{
@@ -40,10 +55,43 @@ header.scrolled {
     height: 90px;
 }
 
+
+
 /* MAIN */
-main{
+.titre-h2{
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    display: inline-block;
+    text-decoration: underline;
 }
 
+.titre-h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 25%;
+    bottom: -5px; /* Espace entre le texte et le soulignement */
+}
+
+.button{
+    padding: 10px 45px;
+    font-size: 1.2rem;
+    color:#1f2912 ;
+    border: 2px solid #465D2A;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    background-color: #465D2A;
+    border: 2px solid #465D2A;
+}
 
 /* SECTION 1 : page d'acceuil -photo background */
 
@@ -60,29 +108,80 @@ main{
 
 .conteneur-texte-hero{
     position: absolute; /*pour mettre ce conteneur au dessus le l'image, qui elle a été placée en absolute*/
-    max-width: 500px;
-    height: ;
-    padding: 20px;
+    max-width: 700px;
     color:white;
     text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 130px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    margin-top: 20%;
+    display: flex; /* Using flexbox to align elements */
+    flex-direction: column; /* Aligning elements vertically */
+    align-items: center; /* Centering elements horizontally */
+    gap: 20px; /* Adding space between elements */
+}
+
+.conteneur-texte-hero h1{
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.conteneur-texte-hero button{
+    padding: 10px 45px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteneur-texte-hero button:hover{
+    background-color: orange;
+    color: black;
+    border:2px solid orange;
 }
 
 
 /* SECTION 2 : rubrique Le restaurant  */
 
 #Le-Restaurant{
-    width: 95%;
-    height: fit-content;
+    width: 85%;
+    height: auto;
+    margin: 2% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2%;
+    gap: 10%;
 }
 
+.boite-gch{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+.boite-gch p{
+    text-align: center;
+}
+
+.boite-drte{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 3%;
+}
+
+.boite-drte img{
+    width: 324px;
+    height: 500px;
+    border-radius: 3px;
+}
