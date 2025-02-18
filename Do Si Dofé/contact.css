@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap");
+
+/* HEADER   */
+
+.Header-nav {
+  position: fixed;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(61, 57, 57, 0.331); /* Ombre pour démarquer le header */
+  z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+  font-size: 20px;
+}
+
+.Header-nav.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+  width: 258px;
+  height: 100%;
+}
+
+header ul {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5 rem; /* Taille du texte pour des boutons larges */
+}
+
+header ul li a:hover {
+  background-color: black; /* Fond noir au survol */
+  color: white; /* Texte blanc au survol */
+  padding: 10px 20px; /* Marges internes */
+  border-radius: 5px; /* Coins arrondis */
+  border: 2px solid black; /* Bordure noire */
+}
+
+.zone-connexion button {
+  font-size: 20px;
+  padding: 10px 20px; /* Marges internes */
+  border-radius: 5px; /* Coins arrondis */
+  border: 2px solid black; /* Bordure noire */
+  background-color: transparent; /* Fond transparent */
+  color: black; /* Texte noir */
+  cursor: pointer; /* Curseur pointer au survol */
+  transition: background-color 0.3s, color 0.3s; /* Transition pour les effets */
+}
+
+.zone-connexion button:hover {
+  background-color: black; /* Fond noir au survol */
+  color: white; /* Texte blanc au survol */
+}
+
+/* MAIN */
+
+
+/* SECTION  : VIDE */
+#pub{
+    width: 100%;
+    height: 350px;
+}
+
+#pub img{
+    width: 100%;
+    height: 130px;
+    margin-top: 130px;
+}
+
+
+/* SECTION  : FORMULAIRE de CONTACT */
+
+#zone-contact{
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+}
+
+.sous-titre{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold ;
+    text-align: center;
+}
+
+
+.formulaire {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #0000005f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000000 (0, 0, 0.2);
+}
+
+.formulaire h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    border: 2px solid black; /* Bordure noire */
+    background-color: black; /* Fond transparent */
+    color: white; /* Texte noir */
+    cursor: pointer; /* Curseur pointer au survol */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets */
+}
+    
+button:hover {
+    background-color: white; /* Fond noir au survol */
+    color: black; /* Texte blanc au survol */
+}
+
+.reservation {
+  margin-top: 20px;
+  text-align: center;
+  color: #8f3e3e;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.feuille {
+  width: 25%;
+  height: 100%;
+}
+
+.feuille2 {
+  left: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-betweena;
+  background-color: #c79a12;
+}
+
+.Footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 344px;
+  height: fit-content;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+}
+
+.footer-menu ul li {
+  list-style-type: none;
+  font-size: 1.5 rem; /* Taille du texte pour des boutons larges */
+  padding: 10px 20px; /* Marges internes */
+}
+
+.footer-menu ul li a:hover {
+  color: white; /* Texte blanc au survol */
+  padding: 10px 20px; /* Marges internes */
+  border-radius: 5px; /* Coins arrondis */
+  border: 2px solid; /* Bordure noire */
+}
+
+.footer-social {
+  font-size: 16px; /* Taille du texte pour des boutons larges */
+}
+
+.footer-social p {
+  font-size: 16px; /* Taille du texte pour des boutons larges */
+}
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+}
+
+.droits {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #485b1a;
+  color: white;
+}
