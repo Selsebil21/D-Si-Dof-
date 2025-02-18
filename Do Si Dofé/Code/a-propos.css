@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+
+
+/* HEADER   */
+
+.Header-nav{
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-between;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;    
+    box-shadow: 0 4px 6px rgba(61, 57, 57, 0.331); /* Ombre pour démarquer le header */
+    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+    font-size: 20px;
+}
+
+.Header-nav.scrolled {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header img{
+    width: 258px;
+    height: 100%;
+}
+
+header ul{
+    width: 40%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5 rem; /* Taille du texte pour des boutons larges */
+}
+
+header ul li a:hover{
+    background-color: black; /* Fond noir au survol */
+    color: white; /* Texte blanc au survol */
+    padding: 10px 20px; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    border: 2px solid black; /* Bordure noire */
+}
+
+.zone-connexion button{
+    font-size: 20px;
+    padding: 10px 20px; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    border: 2px solid black; /* Bordure noire */
+    background-color: transparent; /* Fond transparent */
+    color: black; /* Texte noir */
+    cursor: pointer; /* Curseur pointer au survol */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets */
+}
+    
+.zone-connexion button:hover {
+    background-color: black; /* Fond noir au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+
+/* MAIN   */
+
+
+/* SECTION 1 : background boisson   */
+
+#Boisson img{
+    width: 100%;
+    height: 400px;
+}
+
+/* SECTION 2 : A propos   */
+
+#A-propos{
+    width: 90%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 60px auto;
+    gap: 20px;
+}
+
+.titre{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.Présentation{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    gap: 4%;
+}
+
+#A-propos p{
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.taille-image-menu{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(5deg);
+}
+
+
+/* SECTION 3 : Itineraire sur WAZE  */
+
+#waze{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    margin: 60px auto;
+}
+
+.en-tete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#waze button{
+    font-size: 20px;
+    padding: 10px 20px; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    border: 2px solid black; /* Bordure noire */
+    background-color: transparent; /* Fond transparent */
+    color: black; /* Texte noir */
+    cursor: pointer; /* Curseur pointer au survol */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets */
+}
+
+#waze button:hover{
+    background-color: black; /* Fond noir au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+
+/* FOOTER */
+.feuille{
+    width: 25%;
+    height: 100%;
+}
+
+.feuille2{
+    left: 100px;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-betweena;
+    background-color: #c79a12;
+}
+
+.Footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align:center ;
+}
+
+.footer-logo{
+    width:344px;
+    height: fit-content;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-menu ul li{
+    list-style-type: none;
+    font-size: 1.5 rem; /* Taille du texte pour des boutons larges */
+    padding: 10px 20px; /* Marges internes */
+}
+
+.footer-menu ul li a:hover{
+    color: white; /* Texte blanc au survol */
+    padding: 10px 20px; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    border: 2px solid; /* Bordure noire */
+}
+
+.footer-social{
+    font-size: 16px; /* Taille du texte pour des boutons larges */
+}
+
+.footer-social p{
+    font-size: 16px; /* Taille du texte pour des boutons larges */
+}
+.footer-social img{
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+}
+
+.droits{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    background-color:#485B1A ;
+    color: white;
+}

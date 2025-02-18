@@ -1,204 +1,144 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dé Si Dofé - Restaurant créole gastronomique</title>
-    <link rel="stylesheet" href="./index-style.css" />
+    <meta
+      name="description"
+      content="Vie Verte est un restaurant vegan situé sur la place Trou d'eau à Saint-Leu. Venez découvrir nos plats savoureux et responsable de l'environnement"
+    />
+    <title>Vie Verte - Restaurant Vegan</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
-    <header>
-      <ul class="barre-de-navigation">
-        <li><a href="#"> </a></li>
-        <li><a href="#"> Le Restaurant </a></li>
-        <li><a href="#"> Notre cheffe </a></li>
-        <li><a href="#"> Menu </a></li>
+    <header class="Header-nav">
+      <img src="../Assets/logo.bgerase.png" alt="logo vie verte" />
 
-        <li>
-          <a href="#">
-            <img
-              class="Logo-nav"
-              src="../Visu/DeSiDofe_Blanc.webp"
-              alt="logo-blanc"
-            />
-          </a>
-        </li>
-
-        <li><a href="#"> Galerie </a></li>
-        <li><a href="#"> Réservation </a></li>
-        <li><a href="#"> Contact </a></li>
-        <li>
-          <a href="#"> <img class="icon"
-            src="../Visu/language.png" alt="language"> </a>
-        </li>
+      <ul>
+        <li><a href="index.html" class="active">Acceuil</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./a-propos.html">A propos</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
+
+      <div class="zone-connexion">
+        <button type="button">
+          Réserver votre table <br />
+          au 0123456789
+        </button>
+      </div>
     </header>
 
     <main>
-      <section id="Page-aceuil">
+      <section id="Réservation">
+        <button class="texte-résa">Réserver votre table maintenant</button>
         <img
-          class="fond-hero"
-          src="../Visu/fond-noir-resto.jpg"
-          alt="image de fond de présentation"
+          class="taille-img-presentation"
+          src="../Assets/assortiement2.jpg"
+          alt="assortiement2"
         />
-        <div class="conteneur-texte-hero">
-          <h1>Lorem ipsum dolor sit amet consectes eum odio ipsa
-          <button class="button-orange">Button sample</button>
-        </div>
       </section>
 
-      <section id="Le-Restaurant">
-        <div class="boite-gch">
-          <h2 class="titre-h2">Le Restaurant</h2>
-          <h3>Lullam officia perspiciatis amet veritatir</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            modi nulla, ipsam omnis eum odio ipsa ea fugit officiis aliquam
-            eaque rerum est laboriosam, error molestias ipsum pariatur.
-            Repudiandae, perspiciatis. Lorem ipsum, dolor sit amet consectetur
-             adipisicing elit. Quam omnis ad temporibus explicabo. Minima ipsum 
-             ipsa ipsam fuga, alias sequi, placeat ullam fugiat repellendus 
-             cupiditate officiis, aut ratione quisquam vero.
-          </p>
-          <button class="button">
-            Button sample
-          </button>
-        </div>
-        <div class="boite-drte">
-          <img src="../Visu/charbon.jpg"  alt="charbon" />
-          <img src="../Visu/tables.jpg" alt="tables" />
-        </div>
-      </section>
-
-      <section id="La-Cheffe">
-        <div>
-          <img src="../Visu/la-cheffe.jpg"  alt="la cheffe" />
-        </div>
-        <div class="boite-gch">
-          <h2 class="titre-h2">La Cheffe</h2>
-          <h3>Lullam officia perspiciatis amet veritatir</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            modi nulla, ipsam omnis eum odio ipsa ea fugit officiis aliquam
-            eaque rerum est laboriosam, error molestias ipsum pariatur.
-            Repudiandae, perspiciatis. Lorem ipsum, dolor sit amet consectetur
-             adipisicing elit. Quam omnis ad temporibus explicabo. Minima ipsum 
-             ipsa ipsam fuga, alias sequi, placeat ullam fugiat repellendus 
-             cupiditate officiis, aut ratione quisquam vero.
-          </p>
-          <button class="button">
-            Button sample
-          </button>
-        </div>
-
-      </section id="Spécialités">
-        <div class="boite-spe">
-          <h2 class="titre-h2">Spécialités</h2>
-          <h3>Lullam officia perspiciatis amet veritatir</h3>
-          <p>
-            Lorem ipsum dolor. Quam omnis ad temporibus explicabo. Minima ipsum 
-            ipsa ipsam fuga, alias sequi, placeat ullam fugiat repellendus 
-            cupiditate officiis, aut rationeipsam fuga, alias sequi, placeat ull quisquam vero.
-          </p>
-          <div id="grid-3">
-            <img src="../Visu/rhum.jpg" alt="boisson">
-            <img src="../Visu/resto.jpg" alt="vue sur le restaurant">
-            <img src="../Visu/plats.jpg" alt="Plats">
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
+      <section id="Presentation-du-Menu">
+        <div class="Présentation">
+          <div id="Présa">
+            <h1>
+              Votre restaurant <strong class="Vie-Verte">Vie Verte</strong> : <br>Vegan, savoureux et respectueux de notre
+              planète
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+              saepe molestiae modi mollitia soluta placeat beatae nostrum
+              molestias cum, praesentium aperiam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam omnis porro, accusamus quam neque aliquid incidunt repellat totam culpa aperiam natus quaerat aspernatur voluptate saepe fugit voluptatibus eligendi inventore!
+            </p>
+            <div id="DEUXboutons">
+              <button class="button" type="button">En savoir plus</button>
+              <button class="button2" type="button">Voir le Menu</button>
+            </div>
           </div>
-          <button class="button">
-            Button sample
-          </button>
+
+          <img
+            class="taille-image-menu"
+            src="../Assets/vegan.jpg"
+            alt="vegan"
+          />
         </div>
       </section>
 
-      <section id="Citations">
-        <img src="../Visu/arrow_back_ios_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="flèche retour"></i>
-        <div class="boite-cit">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dolorum iure magnam beatae vel repellendus accusantium laudantium in magni fugiat facilis minus modi dolores architecto, consectetur rem maxime excepturi sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit labore, blanditiis maiores accusamus corporis aliquam expedita voluptatem perferendis libero sequi sint culpa dolore, quis quae, debitis neque a tempora quod.</p>
-          <p><b>- Lorem ipsum</b></p>
+      <section id="Horaires">
+
+        <div class="container"> 
+          
+            
+        <img class="couverts"   src="../Assets/couvert.remove.png" alt="">
+
+        <div class="zone-horaires">
+
+          <h1>Horaires d'ouverture</h1>
+
+          <table id="Tableau">
+            <tr>
+              <td>Lundi :</td>
+              <td class="deuxieme-colonne">Fermé</td>
+            </tr>
+            <tr>
+              <td>Du Mardi au Vendredi :</td>
+              <td class="deuxieme-colonne">9h - 21h</td>
+            </tr>
+            <tr>
+              <td>Samedi :</td>
+              <td class="deuxieme-colonne">9h - 14h</td>
+            </tr>
+            <tr>
+              <td>Dimanche :</td>
+              <td class="deuxieme-colonne">Fermé</td>  
+            </tr>
+          </table>
         </div>
-        <img src="../Visu/arrow_forward_ios_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="flèche avant">      
+
+        <img  class="couverts"    src="../Assets/couvert.remove.png" alt="">
+
       </section>
 
-      <section id="Derniere-section">
+      <section id="Photos">
+        <img class="taille-image" src="../Assets/plat1.jpeg" alt="plat1" />
+        
+        <img
+          class="taille-image"
+          src="../Assets/side-view.jpg"
+          alt="assiette"
+        />
 
-        <img class="map" src="../Visu/carte.png" alt="map">
- 
-        <div class="boite-last-drte">
-          <img 
-            class="Logo-nav" 
-            src="../Visu/DeSiDofe_Blanc.webp" 
-            alt="">          
-          </img>
-          <h3>Lullam officia perspiciatis amet veritatir</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            modi nulla, ipsam omnis eum odio ipsa ea fugit officiis aliquam
-            eaque rerum est laboriosam.
-          </p>
-          <button class="button-orange">
-            Button sample
-          </button>
+        <img class="taille-image" src="../Assets/plat3.jpeg" alt="plat3" />
+
         </div>
-
       </section>
     </main>
 
     <footer>
-      <img 
-        id="fond-flamme"
-        src="../Visu/flamme-footer.jpg" 
-        alt="image-background-noir-enflammé">
-     </img>
-
-      <div id="Footer">
-
-        <div class="footer-haut">
-          <div class="mini-column">
-            <img class="Logo-nav" src="../Visu/DeSiDofe_Blanc.webp" alt="Logo blanc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Er endi in. Excepturi, tenetur sapiente nam provident ratione.</p>
-          </div>
-          <div class="mini-column">
-            <h3>Menu 1</h3>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="mini-column">
-            <h3>Menu 2</h3>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="mini-column">
-            <h3>Menu 3</h3>
-            <p>Lorem ipsum</p>
-            <input type="text" placeholder="Entrer votre adresse mail">          
+      <img class=" feuille  feuille1" src="../Assets/feuille cote 1.jpg" alt="feuille1">
+      <div class="Footer">
+        <img class="footer-logo" src="../Assets/logo-removebg.png" alt="logo-removebg" />
+        <div class="footer-menu">
+          <ul>
+            <li><a href="index.html" class="active">Acceuil</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./a-propos.html">A propos</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <p>Suivez-nous sur nos réseaux : </p>
+          <div class="social-icon">
+            <img src="../Assets/fb-icon-removebg-preview.png" alt="facebook">  
+            <img src="../Assets/instagram-icon.png" alt="instaagram">  
+            <img src="../Assets/tiktok-icon-removebg-preview.png" alt="tiktok">  
           </div>
         </div>
-
-        <hr>
-
-        <div class="footer-bas">
-          <div class="footer-bas2">
-            <p>Lorem ipsum</p>
-            <hr>
-            <p>Lorem ipsum</p>
-            <hr>
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="footer-icon">
-            <img img class="icon"
-            src="../Visu/facebook-removebg-preview.png" alt="icone facebook">
-            <img img class="icon"
-            src="../Visu/instagram-removebg-preview.png" alt="icone instagram">
-          </div>
-        </div>
-
       </div>
+      <img class=" feuille feuille2"  src="../Assets/feuille cote 2.jpg" alt="feuille2">
     </footer>
+    <p class="droits">&copy; 2025 Vie Verte. Tous droits réservés.</p>
   </body>
 </html>
